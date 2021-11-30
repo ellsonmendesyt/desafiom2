@@ -15,9 +15,7 @@ function App() {
   const [loading,setLoading]=React.useState(false); 
   const [error,setError]=React.useState(false); 
 
-  const [fixo,setFixo]=React.useState(null);
-  const [tv,setTv]=React.useState(null);
-  const [internet,setInternet]=React.useState(null);
+  
 
   const [products,setProducts]= React.useState(null);
 
@@ -29,9 +27,7 @@ function App() {
     setLoading(true);
     axios.get(`${baseUrl}`)
     .then((response) => {
-      setFixo(response.data.fixo);
-      setInternet(response.data.internet);
-      setTv(response.data.tv);
+    
 
       setProducts(response.data);
       
@@ -52,7 +48,7 @@ function App() {
   return (
     <div className='layout'>
 
-      {fixo && tv && internet && <ProductsContext.Provider value={{fixo,tv,internet}}> 
+      { products && <ProductsContext.Provider value={{fixo:products.fixo,tv:products.tv,internet:products.internet}}> 
     <Header />
     
       <Routes>
