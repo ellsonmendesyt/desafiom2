@@ -13,8 +13,12 @@ const Home = () => {
        
          
         <List items={products.fixo} />
-        <List items={products.internet} /> 
-        <List items={products.tv} />
+        
+         
+             <List items={products.internet} />
+        
+         
+              <List items={products.tv} />
              
          
        

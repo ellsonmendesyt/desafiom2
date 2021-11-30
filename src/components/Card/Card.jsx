@@ -11,7 +11,7 @@ const Card = ({item}) => {
              <p>{item.detalhes}</p>
             </CardBody>
             <CardFooter>
-
+             <p>R${item.preco}</p>
             </CardFooter>
         </CardContainer>
         

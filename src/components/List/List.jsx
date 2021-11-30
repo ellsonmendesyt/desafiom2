@@ -23,12 +23,16 @@ const List = ({items}) => {
 const ListContainer = styled.section`
 display: flex;
 flex-wrap: wrap;
-justify-content: flex-start;
+justify-content: center;
 
 padding: 1rem;
 max-width: 1200px;
 margin: 2rem auto;
 /* outline: 1px solid #ddd; */
+
+@media (min-width:900px){
+    justify-content: flex-start;
+}
 
 `
 

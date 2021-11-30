@@ -11,7 +11,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 export const ProductsContext = createContext(null);
 
 function App() {
-  const baseUrl =`http://localhost:8000/data`;
+  const baseUrl =`https://my-json-server.typicode.com/ellsonmendesyt/desafiom2/data`;
   const [loading,setLoading]=React.useState(false); 
   const [error,setError]=React.useState(false); 
 

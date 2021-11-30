@@ -8,6 +8,8 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
     /* background-color: cornsilk; */
     font-family: 'Roboto',sans-serif;
     font-size: 1rem;
@@ -17,7 +19,7 @@ body{
 .layout{
     width: 100%;
     outline: 1px solid orange;
-    background-color: antiquewhite;
+    background-color: #fff;
     margin: 0 auto;
     min-height: 100vh;
 
