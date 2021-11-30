@@ -10,18 +10,9 @@ const Home = () => {
   
     return (
         <main className='main-container'>
-       
-         
-        <List items={products.fixo} />
-        
-         
-             <List items={products.internet} />
-        
-         
-              <List items={products.tv} />
-             
-         
-       
+            <List items={products.fixo} />
+            <List items={products.internet} />
+            <List items={products.tv} />
         </main>
     )
 }

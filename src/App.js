@@ -19,6 +19,8 @@ function App() {
   const [tv,setTv]=React.useState(null);
   const [internet,setInternet]=React.useState(null);
 
+  const [products,setProducts]= React.useState(null);
+
 
 
 
@@ -30,6 +32,8 @@ function App() {
       setFixo(response.data.fixo);
       setInternet(response.data.internet);
       setTv(response.data.tv);
+
+      setProducts(response.data);
       
     })
     .catch(error=>{
