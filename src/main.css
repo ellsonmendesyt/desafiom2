@@ -1,0 +1,48 @@
+html{
+  
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* background-color: cornsilk; */
+    font-family: 'Roboto',sans-serif;
+    font-size: 1rem;
+}
+
+
+.layout{
+    width: 100%;
+    outline: 1px solid orange;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    min-height: 100vh;
+
+
+    display: grid;
+
+    grid-template-areas: 
+    'header '
+    'main   '
+    'footer '
+    ;
+    grid-template-columns: 2fr ;
+    grid-template-rows:  5rem 1fr 5rem;
+}
+
+
+
+/* .container{
+   
+    width: 100%;
+    max-width: 1200px;
+    outline: .2px solid olive;
+    margin: 0 auto;
+    
+} */
+
+
+
